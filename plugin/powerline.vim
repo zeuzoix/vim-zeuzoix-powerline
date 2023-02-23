@@ -29,6 +29,8 @@ set statusline+=%l
 set statusline+=/
 set statusline+=%L
 set statusline+=%1*
+set statusline+=\ 
+set statusline+=%c
 set statusline+=|
 set statusline+=%y
 hi User2 ctermbg=lightgreen ctermfg=black guibg=lightgreen guifg=black
@@ -76,4 +78,3 @@ augroup GetGitBranch
   autocmd!
   autocmd VimEnter,WinEnter,BufEnter * call StatuslineGitBranch()
 augroup END
-
